@@ -1,6 +1,15 @@
+:root{
+  --primary: #f46b45;
+  --black: black;
+}
+
 body{
   margin:0px;
-  background: black;
+  background: #f46b45;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: black; */
   color:white;
 }
 
@@ -14,14 +23,17 @@ h1{
   padding: 1rem;
   text-align: center;
   display: block;
-  /* justify-content: center; */
+  /* width: 40%; */
+  justify-content: center;
   border: 1px solid white;
   min-height: 60vh;
 }
 
 input{
   /* display: block; */
+  width: 40%;
   text-align: center;
+  padding: 0.5rem;
 }
 
 #output{
@@ -31,4 +43,17 @@ input{
 
 #submitBtn{
   text-align: center;
+  margin:auto;
+  margin-top: 10px;
+  justify-content: center;
+  display: block;
+  padding: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--black);
+  border-radius: 10px;
 }
+
+#submitBtn:hover{
+  cursor: pointer;
+}
+
